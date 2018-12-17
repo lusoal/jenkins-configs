@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                sh 'sh cd flask_api && pytest test_class.py'
+                sh 'cd flask_api && pytest test_class.py'
                 //Executando teste unitario       
             }
         }
